@@ -1,5 +1,6 @@
-SPIRIT TRAIL 2026 – ÚTMUTATÓ
+PÁLINKA TÚRA – ÚTMUTATÓ
 =============================
+Élő link: https://lacizoldseges.github.io/spirit-trail-2026/
 
 A csomag tartalma:
 - index.html            → az app maga
@@ -78,6 +79,31 @@ szerveren (ne külön almappákban), mert egymásra hivatkoznak.
      "📂 Visszaállítás fájlból" gombra, majd válaszd ki a letöltött
      .json fájlt. Ha már van adat a gépen, az app rákérdez, mielőtt
      felülírná.
+
+
+5B. CSOPORTOS ÖSSZESÍTÉS (ha többen – pl. hárman – értékeltek)
+------------------------------------------------------------
+Ha mindenki a saját telefonján külön-külön pontozott, a nap végén
+egy helyen összesítheted a közös átlagot:
+
+  1. Mindenki készítsen a saját telefonján egy "💾 Teljes biztonsági
+     mentés (.json)" fájlt, és küldje el neked (pl. e-mailben, chaten).
+  2. Nyisd meg az appot (bármelyik telefonon/gépen), görgess egészen
+     le a "Csoportos összesítés" részhez.
+  3. Kattints a "📥 Mentés fájlok kiválasztása" gombra, és egyszerre
+     válaszd ki mindhárom (vagy ahány) .json fájlt.
+  4. Az app automatikusan összepárosítja az azonos nevű párlatokat
+     (kis-nagybetűtől és szóköztől függetlenül) és főzdénként,
+     párlatonként kiszámolja a közös átlagot, kiírja ki hányan
+     értékelték, és kijelöli a csoport győztesét.
+  5. A résztvevők neve alatta átírható (pl. "Résztvevő 1" → "László"),
+     ez azonnal frissíti a listát.
+  6. "↓ Összesítés letöltése (.txt)" gombbal le is mentheted a végső
+     csoportos eredményt.
+
+FONTOS: ez a funkció NEM írja felül és NEM menti el a telefon saját
+adatait – csak egy ideiglenes, csak a képernyőn megjelenő összesítést
+számol a kiválasztott fájlokból. Bárki biztonságosan kipróbálhatja.
 
 
 6. MIT TESZTELTEM TÉNYLEGESEN (a beépített böngészőben)
