@@ -1,8 +1,9 @@
-const CACHE_NAME = 'spirit-trail-2026-v4';
+const CACHE_NAME = 'spirit-trail-2026-v5';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
+  './icons/hero-photo.jpg',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-maskable-192.png',
