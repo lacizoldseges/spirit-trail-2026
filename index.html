@@ -1,0 +1,350 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Spirit Trail 2026 – Pálinkatúra / Brennerei-Tour</title><meta name="theme-color" content="#151510">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Spirit Trail">
+<style>
+:root{--bg:#11120e;--panel:#202119;--gold:#d9b976;--line:#4a4838;--muted:#b6b19f;--text:#f3eee2}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif}body:before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 70% 10%,#53422755,transparent 45%),radial-gradient(ellipse at 5% 90%,#34422c44,transparent 42%)}input[type=radio].lang-radio{position:absolute;left:-100vw}.de{display:none}#de:checked ~ .app .hu{display:none}#de:checked ~ .app .de{display:inline}#de:checked ~ .app .de.block{display:block}#hu:checked ~ .app label[for=hu],#de:checked ~ .app label[for=de]{background:var(--gold);color:#211a0d}.app{min-height:100vh}header{position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);background:#171711ed;backdrop-filter:blur(15px)}nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}.brand{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.brand b{color:var(--gold)}.switch{display:flex;padding:4px;gap:3px;background:#28271e;border:1px solid var(--line);border-radius:40px}.switch label{display:flex;align-items:center;justify-content:center;min-height:40px;cursor:pointer;user-select:none;touch-action:manipulation;border-radius:30px;padding:10px 14px;font-size:12px;font-weight:800;color:#cec5ad}.container{max-width:1120px;margin:auto;padding:0 22px 70px}.hero{padding:76px 0 54px}.kicker,.smallgold{font-size:11px;font-weight:800;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.08}h1{font-size:clamp(52px,9vw,110px);letter-spacing:-.06em;margin:17px 0 22px;max-width:900px;font-weight:500}h1 em{color:var(--gold);font-weight:500}.hero p{color:#d0c9ba;font-size:clamp(16px,2vw,19px);max-width:640px}.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;align-items:center}.chip{border:1px solid var(--line);border-radius:30px;padding:10px 15px;background:#25241d;color:#dbd1bd;font-size:12px}#installBtn{display:none}.section-title{font-size:clamp(30px,4vw,44px);margin:10px 0 25px}.stop,.championship,.summary{border:1px solid var(--line);border-radius:21px;background:linear-gradient(125deg,#25251e,#1b1e19);margin:0 0 24px;overflow:hidden;box-shadow:0 16px 46px #0002}.stop-banner{display:flex;align-items:center;gap:22px;padding:24px 30px;background:linear-gradient(110deg,#4d412a,#25271d)}.big-number{font:italic 55px Georgia,serif;color:#e2c48a66}.emoji{font-size:43px}h3{font-size:31px;margin:6px 0}.stop-banner p{margin:0;color:#bfb7a1}.form{padding:26px 28px}.rating-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.rating{min-width:0;background:#171913;border:1px solid var(--line);padding:13px;border-radius:12px}.rating label{font-size:12px;color:#dfd8c5;display:block;min-height:38px}.stars{display:flex;gap:2px}.stars button{font-size:25px;background:none;border:0;padding:9px 7px;color:#625844;cursor:pointer;touch-action:manipulation;border-radius:8px}.stars button:active{background:#ffffff14}.stars button.on{color:#f0c471}.field{margin-top:18px}.field label{display:block;font-size:12px;font-weight:750;color:#d4c4a3;margin-bottom:7px}.field input,.field textarea{width:100%;padding:13px;border:1px solid var(--line);background:#12150f;color:white;border-radius:10px;font:inherit}.field textarea{min-height:85px;resize:vertical}.result{margin-top:18px;text-align:right;color:var(--muted)}.result strong{font:27px Georgia,serif;color:var(--gold);margin-left:10px}.championship,.summary{padding:28px}.championship h2,.summary h2{font-size:clamp(27px,4vw,42px);color:var(--gold);margin:10px 0}.desc{color:var(--muted)}.champ-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.span2{grid-column:1/-1}select{width:100%;padding:13px;border:1px solid var(--line);background:#12150f;color:white;border-radius:10px;font:inherit}.preview-wrap{margin-top:14px;background:#171913;border:1px solid var(--line);border-radius:12px;padding:14px;display:none}.preview{max-width:240px;max-height:230px;border-radius:11px;display:block;margin:4px 0 12px}.sliders{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}.sliders label{font-size:12px;color:#ded6c5}.sliders input{display:block;width:100%;accent-color:var(--gold)}.button{border:1px solid #d9b976;background:var(--gold);color:#241d13;font-weight:800;padding:12px 20px;border-radius:10px;cursor:pointer;touch-action:manipulation;min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:14px}.button.alt{background:transparent;color:var(--gold)}.buttons{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.entry{display:flex;align-items:center;gap:14px;background:#141711;border:1px solid var(--line);border-radius:14px;padding:14px;margin:11px 0}.entry img{width:86px;height:86px;border-radius:10px;object-fit:cover;cursor:zoom-in}.entry-main{flex:1;min-width:0}.entry-main h4{font-size:18px;margin:0 0 4px;overflow-wrap:anywhere}.entry-main p{font-size:12px;color:var(--muted);margin:0}.points{font:25px Georgia,serif;color:var(--gold)}.remove{border:0;color:#d6b978;background:transparent;cursor:pointer;font-size:12px;padding:10px 0;min-height:40px}.winner{padding:20px;border:1px solid #826c43;border-radius:14px;margin:20px 0;background:#38301c}.winner strong{font:26px Georgia,serif;color:var(--gold)}.tiny{font-size:12px;color:var(--muted);margin-top:14px}.summary button{margin-right:0}
+.lightbox{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:70;padding:22px;cursor:zoom-out}.lightbox.show{display:flex}.lightbox img{max-width:92vw;max-height:88vh;border-radius:12px;box-shadow:0 20px 60px #000a}
+#offlinePill{position:fixed;top:12px;right:12px;z-index:60;background:#2a2114;border:1px solid var(--line);color:var(--gold);font-size:11px;font-weight:800;padding:8px 13px;border-radius:30px;display:none;align-items:center;gap:6px;box-shadow:0 8px 20px #0006}#offlinePill.show{display:flex}
+#banner{position:fixed;left:12px;right:12px;bottom:12px;z-index:65;display:none;align-items:center;gap:10px;flex-wrap:wrap;justify-content:space-between;background:#3a1f1f;border:1px solid #7a3a3a;color:#ffd9d9;padding:14px 16px;border-radius:12px;font-size:13px;box-shadow:0 14px 34px #0007;padding-bottom:max(14px,env(safe-area-inset-bottom))}#banner.show{display:flex}#banner .button{min-height:40px;padding:9px 14px;font-size:12px}
+@media(max-width:750px){.rating-grid,.sliders{grid-template-columns:repeat(2,1fr)}.champ-grid{grid-template-columns:1fr}.span2{grid-column:auto}}
+@media(max-width:510px){nav{padding:11px 12px}.brand{font-size:10px;letter-spacing:.09em}.switch label{padding:11px 12px}.container{padding:0 15px 50px}.hero{padding:52px 0 40px}h1{font-size:55px}.form{padding:17px 14px}.stop-banner{padding:18px;gap:13px}.stop-banner h3{font-size:25px}.big-number{font-size:40px}.emoji{font-size:31px}.championship,.summary{padding:19px 14px}.rating-grid{grid-template-columns:1fr}.rating{padding:10px 7px}.stars{justify-content:space-between}.stars button{font-size:26px;padding:8px 4px}.entry{gap:8px}.entry img{width:64px;height:74px}.points{font-size:19px}.buttons{flex-direction:column}.buttons .button{width:100%}}
+@media print{header,.button,.remove,#offlinePill,#banner,.lightbox,.preview-wrap{display:none!important}body{background:#fff;color:#111}.stop,.championship,.summary{break-inside:avoid;background:#fff;color:#111}}
+</style></head><body>
+<input id="hu" class="lang-radio" type="radio" name="language" checked onchange="onLangChange()">
+<input id="de" class="lang-radio" type="radio" name="language" onchange="onLangChange()">
+<script>
+try{
+  var __raw=localStorage.getItem('spirit-trail-2026-v2');
+  var __lang=null;
+  if(__raw){var __o=JSON.parse(__raw);__lang=__o&&__o.lang;}
+  if(__lang==='de'){document.getElementById('de').checked=true;}
+}catch(e){}
+</script>
+<div id="offlinePill">📴 <span class="hu">Offline mód</span><span class="de">Offline-Modus</span></div>
+<div id="banner" role="alert"></div>
+<div id="lightbox" class="lightbox" onclick="closeLightbox()"><img id="lightboxImg" src="" alt=""></div>
+<div class="app"><header><nav><div class="brand">✦ SPIRIT <b>TRAIL 2026</b></div><div class="switch" role="group" aria-label="Language / Nyelv"><label for="hu">MAGYAR</label><label for="de">DEUTSCH</label></div></nav></header><main class="container"><section class="hero"><div class="kicker"><span class="hu">KÓSTOLÁS · FELFEDEZÉS · ÉLMÉNY</span><span class="de">DEGUSTATION · ENTDECKEN · GENIESSEN</span></div><h1><span class="hu">A nagy</span><span class="de">Die grosse</span><br><em><span class="hu">pálinkatúra.</span><span class="de">Brennerei-Tour.</span></em></h1><p><span class="hu">Három állomás. Egy különleges nap. Értékeld a főzdéket, fotózd le a párlatokat, és válaszd ki a kedvencedet.</span><span class="de">Drei Stationen. Ein besonderer Tag. Bewerte die Brennereien, fotografiere die Destillate und wähle deinen Favoriten.</span></p><div class="chips"><span class="chip">14.11.2026 · <span class="hu">Szombat</span><span class="de">Samstag</span></span><span class="chip">Rothenthurm → Zug → Oberarth</span><span class="chip"><span class="hu">3 állomás</span><span class="de">3 Stationen</span></span><button id="installBtn" class="button alt" onclick="installApp()">📲 <span class="hu">Telepítés</span><span class="de">Installieren</span></button></div></section><section><div class="kicker"><span class="hu">A TÚRA ÁLLOMÁSAI</span><span class="de">DIE STATIONEN DER TOUR</span></div><h2 class="section-title"><span class="hu">Kóstolj. Értékelj. Emlékezz.</span><span class="de">Probieren. Bewerten. Erinnern.</span></h2><article class="stop" data-stop="1"><div class="stop-banner"><div class="big-number">01</div><div class="emoji">🍇</div><div><span class="smallgold"><span class="hu">ÁLLOMÁS</span><span class="de">STATION</span> 01 / 03</span><h3>Sigrist Weingut</h3><p>Letten AG · 10:00</p></div></div><div class="form">
+ <div class="rating-grid">
+ <div class="rating"><label><span class="hu">Italok minősége</span><span class="de">Qualität der Destillate</span></label><div class="stars" data-rating="taste" aria-label="Qualität der Destillate"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Vendéglátás</span><span class="de">Gastfreundschaft</span></label><div class="stars" data-rating="service" aria-label="Gastfreundschaft"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Hangulat</span><span class="de">Atmosphäre</span></label><div class="stars" data-rating="mood" aria-label="Atmosphäre"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Ár-érték arány</span><span class="de">Preis-Leistung</span></label><div class="stars" data-rating="value" aria-label="Preis-Leistung"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div>
+ </div><div class="field"><label><span class="hu">Kóstolt párlatok</span><span class="de">Verkostete Destillate</span></label><input class="drinks" placeholder="Williams, Kirsch, Vieille Prune…" oninput="persist()"></div><div class="field"><label><span class="hu">Megjegyzéseim</span><span class="de">Meine Notizen</span></label><textarea class="note" placeholder="Aroma, Geschmack, Erlebnis…" oninput="persist()"></textarea></div><div class="result"><span class="hu">Átlag</span><span class="de">Durchschnitt</span> <strong class="stop-score">— / 5</strong></div></div></article><article class="stop" data-stop="2"><div class="stop-banner"><div class="big-number">02</div><div class="emoji">🥃</div><div><span class="smallgold"><span class="hu">ÁLLOMÁS</span><span class="de">STATION</span> 02 / 03</span><h3>Heiner’s</h3><p>Zug · —</p></div></div><div class="form">
+ <div class="rating-grid">
+ <div class="rating"><label><span class="hu">Italok minősége</span><span class="de">Qualität der Destillate</span></label><div class="stars" data-rating="taste" aria-label="Qualität der Destillate"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Vendéglátás</span><span class="de">Gastfreundschaft</span></label><div class="stars" data-rating="service" aria-label="Gastfreundschaft"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Hangulat</span><span class="de">Atmosphäre</span></label><div class="stars" data-rating="mood" aria-label="Atmosphäre"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Ár-érték arány</span><span class="de">Preis-Leistung</span></label><div class="stars" data-rating="value" aria-label="Preis-Leistung"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div>
+ </div><div class="field"><label><span class="hu">Kóstolt párlatok</span><span class="de">Verkostete Destillate</span></label><input class="drinks" placeholder="Williams, Kirsch, Vieille Prune…" oninput="persist()"></div><div class="field"><label><span class="hu">Megjegyzéseim</span><span class="de">Meine Notizen</span></label><textarea class="note" placeholder="Aroma, Geschmack, Erlebnis…" oninput="persist()"></textarea></div><div class="result"><span class="hu">Átlag</span><span class="de">Durchschnitt</span> <strong class="stop-score">— / 5</strong></div></div></article><article class="stop" data-stop="3"><div class="stop-banner"><div class="big-number">03</div><div class="emoji">🍐</div><div><span class="smallgold"><span class="hu">ÁLLOMÁS</span><span class="de">STATION</span> 03 / 03</span><h3>Fassbind</h3><p>Oberarth · —</p></div></div><div class="form">
+ <div class="rating-grid">
+ <div class="rating"><label><span class="hu">Italok minősége</span><span class="de">Qualität der Destillate</span></label><div class="stars" data-rating="taste" aria-label="Qualität der Destillate"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Vendéglátás</span><span class="de">Gastfreundschaft</span></label><div class="stars" data-rating="service" aria-label="Gastfreundschaft"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Hangulat</span><span class="de">Atmosphäre</span></label><div class="stars" data-rating="mood" aria-label="Atmosphäre"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div><div class="rating"><label><span class="hu">Ár-érték arány</span><span class="de">Preis-Leistung</span></label><div class="stars" data-rating="value" aria-label="Preis-Leistung"><button type="button" aria-label="1 / 5" onclick="rate(this,1)">★</button><button type="button" aria-label="2 / 5" onclick="rate(this,2)">★</button><button type="button" aria-label="3 / 5" onclick="rate(this,3)">★</button><button type="button" aria-label="4 / 5" onclick="rate(this,4)">★</button><button type="button" aria-label="5 / 5" onclick="rate(this,5)">★</button></div></div>
+ </div><div class="field"><label><span class="hu">Kóstolt párlatok</span><span class="de">Verkostete Destillate</span></label><input class="drinks" placeholder="Williams, Kirsch, Vieille Prune…" oninput="persist()"></div><div class="field"><label><span class="hu">Megjegyzéseim</span><span class="de">Meine Notizen</span></label><textarea class="note" placeholder="Aroma, Geschmack, Erlebnis…" oninput="persist()"></textarea></div><div class="result"><span class="hu">Átlag</span><span class="de">Durchschnitt</span> <strong class="stop-score">— / 5</strong></div></div></article></section>
+<section class="championship"><div class="kicker"><span class="hu">✦ A NAP PÁRLATVERSENYE</span><span class="de">✦ DESTILLAT-WETTBEWERB DES TAGES</span></div><h2><span class="hu">Melyik lesz a nap legjobb párlata?</span><span class="de">Welches Destillat gewinnt?</span></h2><p class="desc"><span class="hu">Minden kóstolt párlatot külön értékelhetsz és lefotózhatsz. A rangsor azonnal frissül.</span><span class="de">Jedes Destillat kann einzeln bewertet und fotografiert werden. Die Rangliste wird sofort aktualisiert.</span></p><div class="champ-grid"><div class="field"><label><span class="hu">Párlat neve *</span><span class="de">Name des Destillats *</span></label><input id="spiritName" placeholder="Williams, Kirsch, Vieille Prune…"></div><div class="field"><label><span class="hu">Kóstolás helye</span><span class="de">Verkostungsort</span></label><select id="spiritStop"><option value="1">Sigrist Weingut · Letten AG</option><option value="2">Heiner’s · Zug</option><option value="3">Fassbind · Oberarth</option></select></div><div class="field span2"><label><span class="hu">Kóstolási jegyzetek</span><span class="de">Degustationsnotizen</span></label><textarea id="spiritNotes" placeholder="Aroma, Geschmack, Abgang…"></textarea></div><div class="field span2"><label><span class="hu">📷 Párlat fotója</span><span class="de">📷 Destillat-Foto</span></label><div class="buttons" style="margin-top:0"><button type="button" class="button alt" onclick="document.getElementById('photoCamera').click()">📷 <span class="hu">Fotó készítése</span><span class="de">Foto aufnehmen</span></button><button type="button" class="button alt" onclick="document.getElementById('photoGallery').click()">🖼️ <span class="hu">Kép a galériából</span><span class="de">Aus Galerie wählen</span></button></div><input id="photoCamera" type="file" accept="image/*" capture="environment" hidden onchange="photoChanged(this)"><input id="photoGallery" type="file" accept="image/*" hidden onchange="photoChanged(this)"><div id="previewWrap" class="preview-wrap"><p class="tiny" style="margin-top:0"><span class="hu">Előnézet – mentés előtt ellenőrizd</span><span class="de">Vorschau – vor dem Speichern prüfen</span></p><img id="preview" class="preview" alt="Preview"><div><button type="button" class="remove" onclick="clearDraftPhoto()">✕ <span class="hu">Fotó törlése</span><span class="de">Foto entfernen</span></button></div></div></div></div><div class="sliders"><div><label><span class="hu">Illat</span><span class="de">Aroma</span>: <strong id="v-aroma">7</strong> / 10</label><input id="r-aroma" type="range" min="1" max="10" value="7" oninput="document.getElementById('v-aroma').textContent=this.value"></div><div><label><span class="hu">Íz</span><span class="de">Geschmack</span>: <strong id="v-taste">7</strong> / 10</label><input id="r-taste" type="range" min="1" max="10" value="7" oninput="document.getElementById('v-taste').textContent=this.value"></div><div><label><span class="hu">Lecsengés</span><span class="de">Abgang</span>: <strong id="v-finish">7</strong> / 10</label><input id="r-finish" type="range" min="1" max="10" value="7" oninput="document.getElementById('v-finish').textContent=this.value"></div><div><label><span class="hu">Összbenyomás</span><span class="de">Gesamteindruck</span>: <strong id="v-overall">7</strong> / 10</label><input id="r-overall" type="range" min="1" max="10" value="7" oninput="document.getElementById('v-overall').textContent=this.value"></div></div><div class="buttons"><button class="button" onclick="addSpirit()"><span class="hu">＋ Párlat mentése</span><span class="de">＋ Destillat speichern</span></button><button class="button alt" onclick="exportCSV()"><span class="hu">↓ Értékelések CSV</span><span class="de">↓ Bewertungen als CSV</span></button></div><div class="winner"><div class="kicker"><span class="hu">🏆 A NAP LEGJOBB PÁRLATA</span><span class="de">🏆 BESTES DESTILLAT DES TAGES</span></div><strong id="winnerName">—</strong><div id="winnerScore" class="tiny"></div></div><h2><span class="hu">Párlatok rangsora</span><span class="de">Destillat-Rangliste</span></h2><div id="entries"><p class="desc"><span class="hu">Még nincs felvett párlat.</span><span class="de">Noch keine Destillate erfasst.</span></p></div><p class="tiny"><span class="hu">A képek és pontok ezen az eszközön tárolódnak, internet nélkül is. A CSV csak a szöveges adatokat tartalmazza; a képekkel együtt a teljes biztonsági mentést használd.</span><span class="de">Fotos und Punkte werden auf diesem Gerät gespeichert, auch offline. Die CSV enthält nur Textdaten; für Fotos das vollständige Backup verwenden.</span></p></section>
+<section class="summary"><div class="kicker"><span class="hu">A NAP MÉRLEGE</span><span class="de">DAS TAGESFAZIT</span></div><h2><span class="hu">A főzdék rangsora</span><span class="de">Rangliste der Brennereien</span></h2><div id="stopRank"></div><div class="buttons"><button class="button alt" onclick="exportAll()"><span class="hu">↓ Teljes értékelés (.txt)</span><span class="de">↓ Alle Bewertungen (.txt)</span></button><button class="button alt" onclick="window.print()"><span class="hu">⎙ Nyomtatás / PDF</span><span class="de">⎙ Drucken / PDF</span></button><button class="button alt" onclick="exportBackup()">💾 <span class="hu">Teljes biztonsági mentés (.json)</span><span class="de">Vollständiges Backup (.json)</span></button><button class="button alt" onclick="triggerImport()">📂 <span class="hu">Visszaállítás fájlból</span><span class="de">Aus Datei wiederherstellen</span></button><input id="backupFile" type="file" accept="application/json,.json" hidden onchange="importBackupFile(this)"></div><p class="tiny"><span class="hu">A biztonsági mentés egy .json fájl, amely a pontokat, jegyzeteket és fotókat is tartalmazza – ezt küldd át a gépedre, majd ott töltsd vissza ugyanitt.</span><span class="de">Das Backup ist eine .json-Datei mit Punkten, Notizen und Fotos – auf den Computer übertragen und dort hier wiederherstellen.</span></p></section></main></div>
+<script>
+const LS_KEY='spirit-trail-2026-v2';
+const LS_KEY_OLD='spirit-trail-2026-stable-v1';
+const DB_NAME='spirit-trail-2026';
+const DB_STORE='state';
+const STATE_KEY='main';
+
+let state={lang:null,stations:{},records:[]};
+let draftPhoto='';
+let db=null;
+let saveFailed=false;
+let persistTimer=null;
+
+function isDe(){return document.getElementById('de').checked}
+function msg(hu,de){return isDe()?de:hu}
+function esc(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+/* ---------- storage: IndexedDB with localStorage fallback ---------- */
+function openDB(){
+  return new Promise((resolve)=>{
+    if(!('indexedDB' in window)){resolve(null);return}
+    try{
+      const req=indexedDB.open(DB_NAME,1);
+      req.onupgradeneeded=()=>{try{req.result.createObjectStore(DB_STORE)}catch(e){}};
+      req.onsuccess=()=>resolve(req.result);
+      req.onerror=()=>resolve(null);
+    }catch(e){resolve(null)}
+  });
+}
+function idbGet(){
+  return new Promise((resolve)=>{
+    if(!db){resolve(undefined);return}
+    try{
+      const tx=db.transaction(DB_STORE,'readonly');
+      const req=tx.objectStore(DB_STORE).get(STATE_KEY);
+      req.onsuccess=()=>resolve(req.result);
+      req.onerror=()=>resolve(undefined);
+    }catch(e){resolve(undefined)}
+  });
+}
+function idbSet(value){
+  return new Promise((resolve,reject)=>{
+    if(!db){reject(new Error('no-idb'));return}
+    try{
+      const tx=db.transaction(DB_STORE,'readwrite');
+      tx.objectStore(DB_STORE).put(value,STATE_KEY);
+      tx.oncomplete=()=>resolve(true);
+      tx.onerror=()=>reject(tx.error||new Error('idb-write-failed'));
+      tx.onabort=()=>reject(tx.error||new Error('idb-write-aborted'));
+    }catch(e){reject(e)}
+  });
+}
+async function loadState(){
+  db=await openDB();
+  let loaded=null;
+  if(db){ try{ loaded=await idbGet() }catch(e){} }
+  if(!loaded){
+    try{ const raw=localStorage.getItem(LS_KEY); if(raw) loaded=JSON.parse(raw) }catch(e){}
+  }
+  if(!loaded){
+    try{
+      const raw=localStorage.getItem(LS_KEY_OLD);
+      if(raw){ const old=JSON.parse(raw); loaded={lang:null,stations:old.stations||{},records:old.records||[]} }
+    }catch(e){}
+  }
+  return loaded||{lang:null,stations:{},records:[]};
+}
+async function commitSave(){
+  const payload={lang:state.lang,stations:state.stations,records:state.records,savedAt:Date.now()};
+  let ok=false;
+  if(db){ try{ await idbSet(payload); ok=true }catch(e){ console.warn('IndexedDB mentés sikertelen',e) } }
+  if(!ok){ try{ localStorage.setItem(LS_KEY,JSON.stringify(payload)); ok=true }catch(e){ console.warn('localStorage mentés sikertelen',e) } }
+  if(ok){ if(saveFailed){ saveFailed=false; hideBanner() } }
+  else{ saveFailed=true; showBanner(msg('⚠️ A mentés sikertelen (nincs elég hely vagy tárolási hiba). A kitöltött mezők megmaradnak – próbáld újra.','⚠️ Speichern fehlgeschlagen (kein Speicherplatz oder Speicherfehler). Die ausgefüllten Felder bleiben erhalten – bitte erneut versuchen.'),true) }
+  return ok;
+}
+function schedulePersist(){ clearTimeout(persistTimer); persistTimer=setTimeout(()=>{commitSave()},350) }
+
+/* ---------- banner / offline pill ---------- */
+function showBanner(text,withRetry){
+  const el=document.getElementById('banner');
+  el.innerHTML='<span>'+esc(text)+'</span>'+(withRetry?'<button type="button" class="button alt" onclick="commitSave()">🔄 <span class="hu">Újra</span><span class="de">Erneut</span></button>':'');
+  el.classList.add('show');
+}
+function hideBanner(){ document.getElementById('banner').classList.remove('show') }
+function updateOfflinePill(){ document.getElementById('offlinePill').classList.toggle('show',!navigator.onLine) }
+window.addEventListener('online',updateOfflinePill);
+window.addEventListener('offline',updateOfflinePill);
+
+/* ---------- language ---------- */
+function applyLangToRadio(){
+  const id=state.lang==='de'?'de':'hu';
+  const el=document.getElementById(id);
+  if(el) el.checked=true;
+  document.documentElement.lang=id;
+}
+function onLangChange(){
+  state.lang=document.getElementById('de').checked?'de':'hu';
+  document.documentElement.lang=state.lang;
+  commitSave();
+}
+
+/* ---------- stations: ratings, notes, drinks ---------- */
+function rate(btn,num){
+  const group=btn.closest('.stars'),art=btn.closest('.stop'),sid=art.dataset.stop,crit=group.dataset.rating;
+  state.stations[sid]=state.stations[sid]||{};
+  state.stations[sid][crit]=num;
+  group.querySelectorAll('button').forEach((el,i)=>el.classList.toggle('on',i<num));
+  updateStopRanks();
+  commitSave();
+}
+function persist(){
+  document.querySelectorAll('.stop').forEach(art=>{
+    const id=art.dataset.stop;
+    state.stations[id]=state.stations[id]||{};
+    state.stations[id].drinks=art.querySelector('.drinks').value;
+    state.stations[id].note=art.querySelector('.note').value;
+  });
+  schedulePersist();
+}
+function stopAvg(v){const nums=['taste','service','mood','value'].map(k=>Number(v[k]||0)).filter(Boolean);return nums.length?nums.reduce((a,b)=>a+b,0)/nums.length:null}
+function updateStopRanks(){
+  const all=[...document.querySelectorAll('.stop')].map(art=>{
+    const v=state.stations[art.dataset.stop]||{},avg=stopAvg(v);
+    art.querySelector('.stop-score').textContent=avg===null?'— / 5':avg.toFixed(2)+' / 5';
+    return {name:art.querySelector('h3').textContent,avg};
+  }).sort((a,b)=>(b.avg??-1)-(a.avg??-1));
+  document.getElementById('stopRank').innerHTML=all.map((x,i)=>`<p>${i+1}. <strong>${esc(x.name)}</strong> · <span style="color:var(--gold)">${x.avg===null?'—':x.avg.toFixed(2)} / 5</span></p>`).join('');
+}
+function applyStateToForm(){
+  document.querySelectorAll('.stop').forEach(art=>{
+    const v=state.stations[art.dataset.stop]||{};
+    art.querySelector('.drinks').value=v.drinks||'';
+    art.querySelector('.note').value=v.note||'';
+    art.querySelectorAll('.stars').forEach(g=>{
+      const n=Number(v[g.dataset.rating]||0);
+      g.querySelectorAll('button').forEach((b,i)=>b.classList.toggle('on',i<n));
+    });
+  });
+}
+
+/* ---------- photo capture ---------- */
+function photoChanged(input){
+  const f=input.files && input.files[0];
+  if(!f) return;
+  const rd=new FileReader();
+  rd.onload=()=>{
+    const pic=new Image();
+    pic.onload=()=>{
+      const max=900,scale=Math.min(1,max/Math.max(pic.width,pic.height));
+      const cv=document.createElement('canvas');
+      cv.width=Math.round(pic.width*scale);
+      cv.height=Math.round(pic.height*scale);
+      cv.getContext('2d').drawImage(pic,0,0,cv.width,cv.height);
+      draftPhoto=cv.toDataURL('image/jpeg',.72);
+      document.getElementById('preview').src=draftPhoto;
+      document.getElementById('previewWrap').style.display='block';
+    };
+    pic.onerror=()=>{ alert(msg('A kép beolvasása sikertelen, próbáld újra.','Das Bild konnte nicht gelesen werden, bitte erneut versuchen.')) };
+    pic.src=rd.result;
+  };
+  rd.onerror=()=>{ alert(msg('A kép beolvasása sikertelen, próbáld újra.','Das Bild konnte nicht gelesen werden, bitte erneut versuchen.')) };
+  rd.readAsDataURL(f);
+}
+function clearDraftPhoto(){
+  draftPhoto='';
+  document.getElementById('photoCamera').value='';
+  document.getElementById('photoGallery').value='';
+  document.getElementById('preview').src='';
+  document.getElementById('previewWrap').style.display='none';
+}
+function openLightbox(src){
+  if(!src) return;
+  document.getElementById('lightboxImg').src=src;
+  document.getElementById('lightbox').classList.add('show');
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('show');
+  document.getElementById('lightboxImg').src='';
+}
+
+/* ---------- spirit entries / championship ---------- */
+async function addSpirit(){
+  const nameEl=document.getElementById('spiritName');
+  const name=nameEl.value.trim();
+  if(!name){ alert(msg('Add meg a párlat nevét!','Bitte Namen des Destillats eingeben!')); return }
+  const entry={
+    id:String(Date.now())+Math.random(),
+    name,
+    stop:document.getElementById('spiritStop').value,
+    note:document.getElementById('spiritNotes').value,
+    photo:draftPhoto,
+    ratings:Object.fromEntries(['aroma','taste','finish','overall'].map(k=>[k,Number(document.getElementById('r-'+k).value)]))
+  };
+  const prevRecords=state.records;
+  state.records=[...prevRecords,entry];
+  const ok=await commitSave();
+  if(!ok){
+    state.records=prevRecords;
+    return;
+  }
+  nameEl.value='';
+  document.getElementById('spiritNotes').value='';
+  clearDraftPhoto();
+  ['aroma','taste','finish','overall'].forEach(k=>{document.getElementById('r-'+k).value=7;document.getElementById('v-'+k).textContent='7'});
+  renderEntries();
+}
+function sscore(x){return Object.values(x.ratings).reduce((a,b)=>a+Number(b),0)/4}
+function renderEntries(){
+  const sorted=[...state.records].sort((a,b)=>sscore(b)-sscore(a)),el=document.getElementById('entries');
+  document.getElementById('winnerName').textContent=sorted.length?sorted[0].name:'—';
+  document.getElementById('winnerScore').textContent=sorted.length?sscore(sorted[0]).toFixed(2)+' / 10':'';
+  el.innerHTML=sorted.length?sorted.map((x,i)=>`<div class="entry"><div class="points">${i+1}.</div>${x.photo?`<img alt="Destillat" src="${x.photo}" onclick="openLightbox('${x.photo}')">`:''}<div class="entry-main"><h4>${esc(x.name)}</h4><p>${esc(['','Sigrist Weingut','Heiner’s','Fassbind'][Number(x.stop)]||'')} · ${esc(x.note)}</p><button class="remove" onclick="removeEntry('${x.id}')">✕ <span class="hu">Törlés</span><span class="de">Löschen</span></button></div><div class="points">${sscore(x).toFixed(2)}<small style="font-size:11px">/10</small></div></div>`).join(''):`<p class="desc"><span class="hu">Még nincs felvett párlat.</span><span class="de">Noch keine Destillate erfasst.</span></p>`;
+}
+async function removeEntry(id){
+  if(!confirm(msg('Törlöd ezt a párlatot?','Dieses Destillat löschen?'))) return;
+  const prevRecords=state.records;
+  state.records=state.records.filter(x=>x.id!==id);
+  renderEntries();
+  const ok=await commitSave();
+  if(!ok){ state.records=prevRecords; renderEntries() }
+}
+
+/* ---------- export / backup / restore ---------- */
+function download(text,name,type){
+  const b=new Blob(['﻿'+text],{type}),url=URL.createObjectURL(b),a=document.createElement('a');
+  a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+function exportCSV(){
+  const rows=[['Rang','Párlat / Destillat','Főzde / Brennerei','Illat / Aroma','Íz / Geschmack','Lecsengés / Abgang','Összbenyomás / Gesamteindruck','Átlag / Schnitt','Megjegyzés / Notiz']];
+  [...state.records].sort((a,b)=>sscore(b)-sscore(a)).forEach((x,i)=>rows.push([i+1,x.name,['','Sigrist','Heiner’s','Fassbind'][Number(x.stop)],...Object.values(x.ratings),sscore(x).toFixed(2),x.note]));
+  download(rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\r\n'),'spirit-trail-2026.csv','text/csv;charset=utf-8');
+}
+function exportAll(){
+  const lines=['SPIRIT TRAIL 2026','14.11.2026',''];
+  document.querySelectorAll('.stop').forEach((el,i)=>{const v=state.stations[i+1]||{};lines.push(el.querySelector('h3').textContent,JSON.stringify(v),'')});
+  state.records.forEach(x=>lines.push(x.name+' · '+sscore(x).toFixed(2)+'/10 · '+x.note));
+  download(lines.join('\n'),'spirit-trail-2026.txt','text/plain;charset=utf-8');
+}
+function nowStamp(){const d=new Date(),p=n=>String(n).padStart(2,'0');return `${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`}
+function exportBackup(){
+  const payload={app:'spirit-trail-2026',version:2,exportedAt:new Date().toISOString(),lang:state.lang,stations:state.stations,records:state.records};
+  download(JSON.stringify(payload,null,2),`spirit-trail-2026-backup-${nowStamp()}.json`,'application/json;charset=utf-8');
+}
+function triggerImport(){ document.getElementById('backupFile').click() }
+async function importBackupFile(input){
+  const f=input.files && input.files[0];
+  if(!f) return;
+  try{
+    const text=await f.text();
+    const data=JSON.parse(text);
+    if(!data||typeof data!=='object'||!('stations' in data)||!('records' in data)){
+      alert(msg('Érvénytelen biztonsági mentés fájl.','Ungültige Sicherungsdatei.'));
+      input.value='';return;
+    }
+    const hasExisting=Object.keys(state.stations||{}).some(k=>{const v=state.stations[k]||{};return v.taste||v.service||v.mood||v.value||v.drinks||v.note})||(state.records||[]).length>0;
+    if(hasExisting){
+      const ok=confirm(msg('A visszaállítás felülírja a jelenleg mentett pontokat, jegyzeteket és fotókat ezen az eszközön. Folytatod?','Die Wiederherstellung überschreibt die aktuell gespeicherten Punkte, Notizen und Fotos auf diesem Gerät. Fortfahren?'));
+      if(!ok){ input.value='';return }
+    }
+    state.stations=data.stations||{};
+    state.records=Array.isArray(data.records)?data.records:[];
+    if(data.lang==='hu'||data.lang==='de'){ state.lang=data.lang; applyLangToRadio() }
+    const ok2=await commitSave();
+    applyStateToForm();
+    renderEntries();
+    updateStopRanks();
+    input.value='';
+    alert(ok2?msg('Visszaállítás kész.','Wiederherstellung abgeschlossen.'):msg('A visszaállított adatok a képernyőn láthatók, de a mentésük sikertelen volt – próbáld újra.','Die wiederhergestellten Daten sind sichtbar, aber das Speichern ist fehlgeschlagen – bitte erneut versuchen.'));
+  }catch(e){
+    console.warn(e);
+    alert(msg('A fájl beolvasása sikertelen. Ellenőrizd, hogy a megfelelő biztonsági mentés fájlt választottad-e.','Die Datei konnte nicht gelesen werden. Bitte prüfe die gewählte Sicherungsdatei.'));
+  }
+  input.value='';
+}
+
+/* ---------- install + service worker ---------- */
+let deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',(e)=>{
+  e.preventDefault();
+  deferredPrompt=e;
+  document.getElementById('installBtn').style.display='inline-flex';
+});
+async function installApp(){
+  if(!deferredPrompt) return;
+  deferredPrompt.prompt();
+  await deferredPrompt.userChoice;
+  deferredPrompt=null;
+  document.getElementById('installBtn').style.display='none';
+}
+window.addEventListener('appinstalled',()=>{ document.getElementById('installBtn').style.display='none' });
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('./service-worker.js').catch(err=>console.warn('SW regisztráció sikertelen',err));
+  });
+}
+
+/* ---------- init ---------- */
+(async function init(){
+  state=await loadState();
+  if(!state.lang){ state.lang=document.getElementById('de').checked?'de':'hu' }
+  applyLangToRadio();
+  applyStateToForm();
+  renderEntries();
+  updateStopRanks();
+  updateOfflinePill();
+})();
+</script></body></html>

@@ -1,0 +1,20 @@
+{
+  "name": "Spirit Trail 2026 – Pálinkatúra",
+  "short_name": "Spirit Trail",
+  "description": "Pálinkatúra értékelő és jegyzetelő app – Sigrist Weingut, Heiner's, Fassbind. / Brennerei-Tour Bewertungs-App.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#11120e",
+  "theme_color": "#151510",
+  "lang": "hu",
+  "dir": "ltr",
+  "orientation": "any",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

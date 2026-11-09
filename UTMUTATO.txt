@@ -1,0 +1,120 @@
+SPIRIT TRAIL 2026 – ÚTMUTATÓ
+=============================
+
+A csomag tartalma:
+- index.html            → az app maga
+- manifest.webmanifest  → a telepítéshez szükséges leíró
+- service-worker.js     → ez teszi lehetővé az offline működést
+- icons/                → app ikonok (telepítéskor ez jelenik meg)
+- server.js             → egyszerű helyi szerver a kipróbáláshoz (Node.js-sel)
+
+FONTOS: az appot NEM lehet csak úgy dupla kattintással, fájlként megnyitni
+(file://...), mert akkor az offline mentés és a telepítés nem fog működni.
+Mindig egy weboldalként kell megnyitni (http:// vagy https:// címen).
+
+
+1. KIPRÓBÁLÁS A SZÁMÍTÓGÉPEN (mielőtt feltöltenéd bárhova)
+------------------------------------------------------------
+Ha van a gépeden Node.js (ha a Claude Code-ot használod, biztosan van):
+
+  1. Nyiss egy parancssort (terminált) ebben a mappában.
+  2. Írd be:  node server.js
+  3. Nyisd meg a böngészőben:  http://localhost:5173
+
+Így ki tudod próbálni az összes funkciót (nyelvváltás, pontozás, fotó,
+export, backup) a gépeden, mielőtt a telefonra kerülne.
+
+
+2. FELTÖLTÉS HTTPS-ES TÁRHELYRE (hogy a telefonodon is elérd)
+------------------------------------------------------------
+A telepítéshez és az offline működéshez HTTPS kell. A legegyszerűbb
+INGYENES megoldás – nem igényel fiókot sem:
+
+  a) Netlify Drop:
+     1. Nyisd meg a böngészőben: https://app.netlify.com/drop
+     2. Húzd rá az egész "Spirit Trail 2026 PWA" mappát (vagy a benne
+        lévő fájlokat: index.html, manifest.webmanifest, service-worker.js,
+        icons/ mappa – a server.js-t NEM kell feltölteni, az csak a helyi
+        teszteléshez kell).
+     3. Pár másodperc múlva kapsz egy linket, pl.:
+        https://valami-nev-123.netlify.app
+     4. Ezt a linket nyisd meg a Samsung S25-ödön.
+
+  b) Ha van GitHub-fiókod, a GitHub Pages is jó (szintén ingyenes,
+     ugyanígy feltöltöd a fájlokat egy repóba, és bekapcsolod a Pages-t).
+
+Mindkét esetben FONTOS, hogy az index.html, a manifest.webmanifest, a
+service-worker.js és az icons mappa UGYANABBAN a mappában legyen a
+szerveren (ne külön almappákban), mert egymásra hivatkoznak.
+
+
+3. TELEPÍTÉS SAMSUNG S25-RE (Android, Chrome)
+------------------------------------------------------------
+  1. Nyisd meg a HTTPS-es linket Chrome-ban a telefonon.
+  2. Pár másodperc után megjelenhet egy "Telepítés" gomb magában az
+     appban (a dátum-chipek mellett) – ha igen, csak koppints rá.
+  3. Ha nem jelenik meg automatikusan: koppints a Chrome jobb felső
+     sarkában lévő ⋮ (három pont) menüre → "Alkalmazás telepítése" vagy
+     "Hozzáadás a kezdőképernyőhöz".
+  4. Ezután az app ikonja megjelenik a kezdőképernyőn, és onnantól
+     önálló alkalmazásként nyílik meg (nincs böngészősáv).
+
+
+4. TELEPÍTÉS / MEGNYITÁS WINDOWSON (Chrome vagy Edge)
+------------------------------------------------------------
+  1. Nyisd meg ugyanazt a HTTPS-es linket Chrome-ban vagy Edge-ben.
+  2. A címsor jobb szélén megjelenik egy telepítés ikon (egy kis
+     monitor+nyíl), vagy a ⋮ / ... menüben: "Alkalmazás telepítése".
+  3. Telepítés nélkül, simán böngészőben is tökéletesen használható.
+
+
+5. HOGYAN VIDD ÁT A TELEFONRÓL A GÉPRE AZ ADATOKAT
+------------------------------------------------------------
+  1. A telefonon az app alján: "💾 Teljes biztonsági mentés (.json)".
+     Ez letölt egy .json fájlt az összes ponttal, jegyzettel és fotóval.
+  2. Küldd át ezt a fájlt a gépedre (pl. magadnak e-mailben, Google
+     Drive-on, vagy USB-kábellel).
+  3. A gépen nyisd meg ugyanazt az appot, és kattints a
+     "📂 Visszaállítás fájlból" gombra, majd válaszd ki a letöltött
+     .json fájlt. Ha már van adat a gépen, az app rákérdez, mielőtt
+     felülírná.
+
+
+6. MIT TESZTELTEM TÉNYLEGESEN (a beépített böngészőben)
+------------------------------------------------------------
+✔ Magyar ⇄ Német nyelvváltás – mindkét gombra külön rákattintottam,
+  valóban lefordul minden felirat, és a kitöltött mezők (pl. jegyzet
+  szöveg) nyelvváltáskor NEM vesznek el.
+✔ A nyelv újratöltés (oldal frissítés) után is megmaradt.
+✔ Csillagos pontozás – kattintásra helyesen frissül az átlag.
+✔ Fotó hozzáadása egy párlathoz – előnézet megjelenik mentés előtt,
+  mentés után a képpel együtt bekerül a rangsorba, és a képre kattintva
+  felnagyítható (lightbox).
+✔ Offline újraindulás – leállítottam a szervert (így nincs hálózati
+  elérés), majd újratöltöttem az oldalt: az app a Service Worker
+  gyorsítótárából betöltött, és a korábban mentett pontok, jegyzetek
+  is megjelentek (IndexedDB-ből).
+✔ Biztonsági mentés visszaállítása – exportáltam egy .json-t, majd egy
+  másik (teszt) adatkészletet importáltam: az app figyelmeztetett, hogy
+  ez felülírja a meglévő adatokat, és a megerősítés után helyesen
+  cserélte le a pontokat, jegyzeteket és a nyelvet.
+✔ CSV, TXT és JSON export – mindhárom exportfüggvény hiba nélkül lefut.
+✔ Mobil (375 px széles, Samsung-méretű) nézet – ellenőriztem és
+  JAVÍTOTTAM egy hibát: a csillagok eredetileg kilógtak a dobozból
+  keskeny képernyőn, emiatt egy oszlopos elrendezésre váltottam az
+  értékelő kártyáknál mobilon, és minden gomb (fotó, mentés, export)
+  most teljes szélességű, egy kézzel is jól elérhető.
+
+✘ AMIT MÉG NEKED KELL ELLENŐRIZNED A TELEFONON (ezt a beépített
+  böngésző nem tudja szimulálni):
+  - A "Telepítés a kezdőképernyőre" tényleges folyamata Android Chrome-ban.
+  - A valódi kamera megnyitása a "Fotó készítése" gombbal (reptér-
+    üzemmód/engedélykérés nélkül csak szimulált fájlfeltöltést
+    teszteltem).
+  - Valódi repülőgép-üzemmód / Wi-Fi+mobilnet teljes kikapcsolása után
+    az app újraindítása a kezdőképernyő-ikonról.
+  - Hogy a telepített app helyesen jelenik-e meg a Samsung S25
+    kezdőképernyőjén a megfelelő ikonnal.
+
+Ha bármelyik pont nem úgy működik a telefonon, ahogy vártad, szólj, és
+tovább finomítom!
