@@ -149,8 +149,10 @@ function onLangChange(){
 function rate(btn,num){
   const group=btn.closest('.stars'),art=btn.closest('.stop'),sid=art.dataset.stop,crit=group.dataset.rating;
   state.stations[sid]=state.stations[sid]||{};
-  state.stations[sid][crit]=num;
-  group.querySelectorAll('button').forEach((el,i)=>el.classList.toggle('on',i<num));
+  const current=state.stations[sid][crit];
+  const next=current===num?0:num;
+  if(next){ state.stations[sid][crit]=next } else { delete state.stations[sid][crit] }
+  group.querySelectorAll('button').forEach((el,i)=>el.classList.toggle('on',i<next));
   updateStopRanks();
   commitSave();
 }
